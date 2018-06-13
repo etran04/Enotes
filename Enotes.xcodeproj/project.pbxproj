@@ -12,7 +12,7 @@
 		074FB96B20D1007400A45767 /* Enotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 074FB96920D1007400A45767 /* Enotes.xcdatamodeld */; };
 		074FB96D20D1007400A45767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074FB96C20D1007400A45767 /* Assets.xcassets */; };
 		074FB97020D1007400A45767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074FB96E20D1007400A45767 /* LaunchScreen.storyboard */; };
-		074FB98120D1015900A45767 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FB98020D1015900A45767 /* NotesViewController.swift */; };
+		074FB98120D1015900A45767 /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FB98020D1015900A45767 /* TopicsViewController.swift */; };
 		074FB98320D102E500A45767 /* SingleNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FB98220D102E500A45767 /* SingleNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		074FB96C20D1007400A45767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		074FB96F20D1007400A45767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		074FB97120D1007400A45767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		074FB98020D1015900A45767 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		074FB98020D1015900A45767 /* TopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
 		074FB98220D102E500A45767 /* SingleNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +88,7 @@
 		074FB97920D1009900A45767 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				074FB98020D1015900A45767 /* NotesViewController.swift */,
+				074FB98020D1015900A45767 /* TopicsViewController.swift */,
 				074FB98220D102E500A45767 /* SingleNoteViewController.swift */,
 			);
 			path = Controller;
@@ -177,7 +177,7 @@
 				074FB98320D102E500A45767 /* SingleNoteViewController.swift in Sources */,
 				074FB96320D1007400A45767 /* AppDelegate.swift in Sources */,
 				074FB96B20D1007400A45767 /* Enotes.xcdatamodeld in Sources */,
-				074FB98120D1015900A45767 /* NotesViewController.swift in Sources */,
+				074FB98120D1015900A45767 /* TopicsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

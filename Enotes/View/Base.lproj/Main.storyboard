@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My E-Notes-->
+        <!--E-notes-->
         <scene sceneID="u80-vJ-PNe">
             <objects>
-                <tableViewController id="1Xs-9j-GxG" sceneMemberID="viewController">
+                <tableViewController id="1Xs-9j-GxG" customClass="TopicsViewController" customModule="Enotes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LYJ-zb-mkb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,11 @@
                             <outlet property="delegate" destination="1Xs-9j-GxG" id="D4s-bE-reT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My E-Notes" id="YS1-M3-JZr"/>
+                    <navigationItem key="navigationItem" title="E-notes" id="YS1-M3-JZr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nk4-13-wGM">
+                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="5Jf-sh-u5f" kind="show" identifier="goToNote" id="z9S-Xt-3gS"/>
                     </connections>
@@ -42,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="557.60000000000002" y="162.3688155922039"/>
         </scene>
-        <!--View Controller-->
+        <!--Single Note View Controller-->
         <scene sceneID="285-6t-rjv">
             <objects>
-                <viewController id="5Jf-sh-u5f" sceneMemberID="viewController">
+                <viewController id="5Jf-sh-u5f" customClass="SingleNoteViewController" customModule="Enotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bW5-f3-ixM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,6 +102,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SAw-EB-ZSp">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.3710446818" blue="0.36925272329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

@@ -8,7 +8,9 @@
 
 import UIKit
 
-class NotesViewController: UITableViewController {
+class TopicsViewController: UITableViewController {
+    
+    var topics = [Topic]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
