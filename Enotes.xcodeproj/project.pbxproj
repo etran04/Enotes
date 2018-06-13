@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		074FB96320D1007400A45767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FB96220D1007400A45767 /* AppDelegate.swift */; };
-		074FB96520D1007400A45767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FB96420D1007400A45767 /* ViewController.swift */; };
 		074FB96820D1007400A45767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074FB96620D1007400A45767 /* Main.storyboard */; };
 		074FB96B20D1007400A45767 /* Enotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 074FB96920D1007400A45767 /* Enotes.xcdatamodeld */; };
 		074FB96D20D1007400A45767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074FB96C20D1007400A45767 /* Assets.xcassets */; };
 		074FB97020D1007400A45767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074FB96E20D1007400A45767 /* LaunchScreen.storyboard */; };
+		074FB98120D1015900A45767 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FB98020D1015900A45767 /* NotesViewController.swift */; };
+		074FB98320D102E500A45767 /* SingleNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FB98220D102E500A45767 /* SingleNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		074FB95F20D1007400A45767 /* Enotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		074FB96220D1007400A45767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		074FB96420D1007400A45767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		074FB96720D1007400A45767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		074FB96A20D1007400A45767 /* Enotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Enotes.xcdatamodel; sourceTree = "<group>"; };
 		074FB96C20D1007400A45767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		074FB96F20D1007400A45767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		074FB97120D1007400A45767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074FB98020D1015900A45767 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		074FB98220D102E500A45767 /* SingleNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		074FB96120D1007400A45767 /* Enotes */ = {
 			isa = PBXGroup;
 			children = (
+				074FB97720D1008B00A45767 /* Model */,
+				074FB97820D1009200A45767 /* View */,
+				074FB97920D1009900A45767 /* Controller */,
 				074FB96220D1007400A45767 /* AppDelegate.swift */,
-				074FB96420D1007400A45767 /* ViewController.swift */,
-				074FB96620D1007400A45767 /* Main.storyboard */,
-				074FB96C20D1007400A45767 /* Assets.xcassets */,
-				074FB96E20D1007400A45767 /* LaunchScreen.storyboard */,
+				074FB97D20D1010500A45767 /* Supporting Files */,
 				074FB97120D1007400A45767 /* Info.plist */,
-				074FB96920D1007400A45767 /* Enotes.xcdatamodeld */,
 			);
 			path = Enotes;
+			sourceTree = "<group>";
+		};
+		074FB97720D1008B00A45767 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				074FB96920D1007400A45767 /* Enotes.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		074FB97820D1009200A45767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				074FB96620D1007400A45767 /* Main.storyboard */,
+				074FB96E20D1007400A45767 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		074FB97920D1009900A45767 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				074FB98020D1015900A45767 /* NotesViewController.swift */,
+				074FB98220D102E500A45767 /* SingleNoteViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		074FB97D20D1010500A45767 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				074FB96C20D1007400A45767 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				074FB96520D1007400A45767 /* ViewController.swift in Sources */,
+				074FB98320D102E500A45767 /* SingleNoteViewController.swift in Sources */,
 				074FB96320D1007400A45767 /* AppDelegate.swift in Sources */,
 				074FB96B20D1007400A45767 /* Enotes.xcdatamodeld in Sources */,
+				074FB98120D1015900A45767 /* NotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CWEESB29TK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Enotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.erictritran.enotes.Enotes;
@@ -294,7 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CWEESB29TK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Enotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.erictritran.enotes.Enotes;
